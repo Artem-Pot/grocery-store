@@ -3,85 +3,182 @@ body {
     color: rgb(65, 65, 65);
 }
 
-
-.header {
-    
-}
-
 .container {
     margin: 0 auto;
     max-width: 1238px;
     width: 100%;
     padding: 0 15px 0 15px;
+
+    @media (max-width: 768px) {
+        max-width: 756px;
+    }
 }
 
-.header__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 72px;
-}
+.header {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 72px;
+        gap: 15px;
+    }
+    
+    &__link-img {
+        
+    }
+    
+    &__img-logo {
+        width: 152px;
+        height: 32px;
+        background: url('../images/header/logo.svg') no-repeat;
+        @media (max-width: 992px) {
+            width: 49px;
+            height: 40px;
+            background: url('../images/header/logo-media.svg') no-repeat;
+        }
+    }
+    
+    &__menu {
+        
+    }
 
-.header__link-img {
+    .button__menu {
+        width: 140px;
+        height: 40px;
+        background-color: #70C05B;
+        font-size: 16px;
+        color: #fff;
+        position: relative;
+        padding-left: 40px;
+        border-radius: 4px;
+        transition: 0.5s;
+        
+        &:hover{
+            background-color: #5a9e49;
+    
+        }
+    
+        &::before {
+            content: '';
+            position: absolute;
+            top: 7px;
+            left: 8px;
+            background: url('../images/header/menu.svg') no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        @media (max-width: 768px) {
+            width: 40px;
+            height: 40px;
+        } 
+    }
 
-}
+    &__list {
+        display: none;
+    }
+    
+    &__items {
+    
+    }
+    
+    &__box-search {
+        width: 358px;
+        height: 40px;
 
-.header__img-logo {
+        @media (max-width: 768px) {
+            max-width: 324px;
+        } 
+    }
 
-}
+    &__search{
+        width: 100%;
+        border: 1px solid #70C05B;
+        border-radius: 4px;
+        padding: 8px;
+        color: #8F8F8F;
+        font-size: 16px;
+    }
 
-.header__menu {
+    .button__search {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: url('../images/header/search.svg') no-repeat;
+        padding-right: 20px;
+        width: 24px;
+        height: 24px;
 
-}
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
 
-.button__menu {
+    &__link-product {
+        
+    }
+    
+    &__box-search {
+        display: flex;
+        position: relative;
+    }
 
-}
+    &__box-icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
 
-.header__list {
-    display: none;
-}
+        @media (max-width: 768px) {
+            gap: 16px;
+        }
+    }
+    
+    &__wrapper-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    &__img-icons {
+        width: 24px;
+        height: 24px;
+        background-size: 24px;
+    }
+    
+    &__title {
+        font-size: 12px;
+    }
+    
+    &__box-profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
 
-.header__items {
+    }
+    
+    &__img-ava {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    
+    &__name-user {
+        font-size: 16px;
 
-}
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
 
-.header__link-product {
-
-}
-
-.header__box-icons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-}
-
-.header__wrapper-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-}
-
-.header__img-icons {
-    width: 24px;
-    height: 24px;
-    background-size: 24px;
-}
-
-.header-title {
-
-}
-
-.header__box-profile {
-
-}
-
-.header__img-ava {
-
-}
-
-.header__arrow {
-
+    .button__arrow {
+        background: url('../images/header/arrow-down.svg') no-repeat;
+        width: 24px;
+        height: 24px;
+        background-size: 24px;
+        
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
 }

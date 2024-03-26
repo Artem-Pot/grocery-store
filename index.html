@@ -14,7 +14,8 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__wrapper"><a class="header__link-img" href="index.html"><img class="header__img-logo" src="images/header/logo.png" alt="Логотип"></a>
+        <div class="header__wrapper"><a class="header__link-img" href="index.html">
+            <div class="header__img-logo"></div></a>
           <div class="header__menu">
             <button class="button__menu">Каталог</button>
             <ul class="header__list">
@@ -26,12 +27,16 @@
               <li class="header__items"><a class="header__link-product" href="#">Чай, кофе</a></li>
             </ul>
           </div>
-          <div class="header__box-icons">
-            <div class="header__wrapper-icons"><img class="header__img-icons" src="images/header/heart.svg" alt="Логотип"><span class="header-title">Избранное</span></div>
-            <div class="header__wrapper-icons"><img class="header__img-icons" src="images/header/order.svg" alt="Логотип"><span class="header-title">Заказы</span></div>
-            <div class="header__wrapper-icons"><img class="header__img-icons" src="images/header/shopping-cart.svg" alt="Логотип"><span class="header-title">Корзина</span></div>
+          <div class="header__box-search">
+            <input class="header__search" type="text" placeholder="Найти товар">
+            <button class="button__search"></button>
           </div>
-          <div class="header__box-profile"><img class="header__img-ava" src="images/header/avatar.png" alt="Аватар"><span class="header-title">Алексей</span>
+          <div class="header__box-icons">
+            <div class="header__wrapper-icons"><img class="header__img-icons" src="images/header/heart.svg" alt="Логотип"><span class="header__title">Избранное</span></div>
+            <div class="header__wrapper-icons"><img class="header__img-icons" src="images/header/order.svg" alt="Логотип"><span class="header__title">Заказы</span></div>
+            <div class="header__wrapper-icons"><img class="header__img-icons" src="images/header/shopping-cart.svg" alt="Логотип"><span class="header__title">Корзина</span></div>
+          </div>
+          <div class="header__box-profile"><img class="header__img-ava" src="images/header/avatar.png" alt="Аватар"><span class="header__name-user">Алексей</span>
             <button class="button__arrow"></button>
           </div>
         </div>
