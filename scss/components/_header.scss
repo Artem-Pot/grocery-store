@@ -21,6 +21,7 @@ body {
         grid-template-columns: auto auto auto auto auto;
         align-items: center;
         gap: 15px;
+        box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
 
         @media (max-width: 550px) {
             grid-template-columns: 50px 1fr auto;
@@ -207,6 +208,10 @@ body {
         align-items: center;
         justify-content: center;
         gap: 10px;
+
+        &:hover {
+            cursor: pointer;
+        }
 
         @media (max-width: 550px) {
             grid-area: header-user;

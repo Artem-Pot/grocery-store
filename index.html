@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="icon" href="img/ico.svg" type="image/svg+xml">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link rel="icon" href="images/header/logo-media.svg" type="image/svg+xml">
     <title>Интернет магазин продуктов питания</title>
   </head>
   <body>
@@ -32,9 +33,9 @@
             <button class="button__search"></button>
           </div>
           <div class="header__box-icons">
-            <div class="header__wrapper-icons"><img class="header__img-icons" src="images/header/heart.svg" alt="Логотип"><span class="header__title">Избранное</span></div>
-            <div class="header__wrapper-icons"><img class="header__img-icons" src="images/header/order.svg" alt="Логотип"><span class="header__title">Заказы</span></div>
-            <div class="header__wrapper-icons"><img class="header__img-icons" src="images/header/shopping-cart.svg" alt="Логотип"><span class="header__title">Корзина</span></div>
+            <div class="header__wrapper-icons"><img class="header__img-icons" src="images/header/heart.svg"><span class="header__title">Избранное</span></div>
+            <div class="header__wrapper-icons"><img class="header__img-icons" src="images/header/order.svg"><span class="header__title">Заказы</span></div>
+            <div class="header__wrapper-icons"><img class="header__img-icons" src="images/header/shopping-cart.svg"><span class="header__title">Корзина</span></div>
           </div>
           <div class="header__box-profile"><img class="header__img-ava" src="images/header/avatar.png" alt="Аватар"><span class="header__name-user">Алексей</span>
             <button class="button__arrow"></button>
@@ -42,7 +43,24 @@
         </div>
       </div>
     </header>
-    <script src="scripts/main.js"></script>
+    <section class="slider">
+      <div class="container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="slider__img" src="images/slider/slide-1.png"><span class="slide__title">Доставка бесплатно от 1000 ₽</span></div>
+            <div class="swiper-slide"><img class="slider__img" src="images/slider/slide-1.png"><span class="slide__title">Слайд 2</span></div>
+            <div class="swiper-slide"><img class="slider__img" src="images/slider/slide-1.png"><span class="slide__title">Слайд 3</span></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+    <script src="scripts/swiper.js"></script>
+    <script src="scripts/app.js"></script>
     <!--pug -w pug/*.pug -o ./ -P-->
+    <!--у хидера сделать меню на всю ширину а не ограничивать иначе тень работает не правильно-->
   </body>
 </html>
