@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -74,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: "Rubik", sans-serif;
   color: rgb(65, 65, 65);
+  background-color: #FBF8EC;
 }
 
 .container {
@@ -342,6 +344,7 @@ body {
 
 .slider {
   background: url("../images/slider/background.png");
+  background-color: #fff;
 }
 .slider__img {
   height: 190px;
@@ -401,4 +404,170 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+/*-----------акции------------------*/
+.product-list__wrapper {
+  height: 443px;
+}
+.product-list__header {
+  height: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+.product-list__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.product-list__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 128px;
+  height: 24px;
+  position: relative;
+  color: inherit;
+  padding: 8px;
+}
+.product-list__all::after {
+  content: "";
+  background: url("../images/product/button-right.svg");
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 15px;
+}
+
+.product-list_stock {
+  margin-top: 80px;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  width: 272px;
+  height: 349px;
+  -webkit-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.product__box-images {
+  position: relative;
+}
+.product__button-favorites {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: url("../images/product/favorites.svg");
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+.product__button-favorites:hover {
+  background-color: #eee;
+}
+.product__sales {
+  position: absolute;
+  background-color: #FF6633;
+  font-size: 16px;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  left: 10px;
+  bottom: 10px;
+}
+.product__box-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 45px;
+  width: 100%;
+  padding: 8px;
+}
+.product__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+}
+.product__price-cart {
+  font-size: 18px;
+  font-weight: 700;
+}
+.product__title {
+  color: #BFBFBF;
+}
+.product__price-nocart {
+  font-size: 16px;
+}
+.product__name {
+  font-size: 16px;
+  padding: 8px;
+}
+.product__box-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: start;
+  gap: 4px;
+  padding-left: 8px;
+}
+.product__star {
+  background: url("../images/product/star-off.svg");
+  width: 16px;
+  height: 16px;
+}
+.product__star:hover {
+  background: url("../images/product/star-on.svg");
+}
+.product__star_on {
+  background: url("../images/product/star-on.svg");
+}
+.product__button-buy {
+  width: 256px;
+  height: 40px;
+  font-size: 16px;
+  color: #70C05B;
+  border-radius: 4px;
+  border: 1px solid #70C05B;
 }/*# sourceMappingURL=style.css.map */

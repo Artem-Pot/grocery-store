@@ -3,6 +3,7 @@
 body {
     font-family: "Rubik", sans-serif;
     color: rgb(65, 65, 65);
+    background-color: #FBF8EC;
 }
 
 .container {
@@ -18,3 +19,4 @@ body {
 
 @import 'components/header';
 @import 'components/slider';
+@import 'components/stock';
