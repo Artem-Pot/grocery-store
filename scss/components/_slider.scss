@@ -1,8 +1,55 @@
 .slider {
     background: url('../images/slider/background.png');
+
+    &__img {
+        height: 190px;
+        margin-left: 67px;
+        align-self: flex-end;
+
+        @media (max-width: 768px) {
+            margin-left: 42px;
+            height: 132px;
+        }
+
+        @media (max-width: 550px) {
+            display: none;
+        }
+    }
+
+    &__title {
+        display: inline;
+        font-size: 3rem;
+        font-weight: 700;
+        white-space: pre-wrap;
+
+        @media (max-width: 992px) {
+            font-size: 2.3rem;
+        }
+
+        @media (max-width: 550px) {
+            font-size: 1.5rem;
+        }
+    }
 }
 
 .swiper {
     width: 100%;
     height: 200px;
+
+
+    @media (max-width: 768px) {
+        height: 164px;
+    }
+}
+
+.swiper-wrapper {
+
+}
+
+.swiper-slide {
+    display: flex !important;
+    align-items: center;
+    @media (max-width: 550px) {
+        justify-content: center;
+    }
 }
