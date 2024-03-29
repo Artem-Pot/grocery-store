@@ -12,9 +12,11 @@ html(lang="ru")
         link(rel="icon" href="images/header/logo-media.svg" type="image/svg+xml")
         title= "Интернет магазин продуктов питания"
     body
-        include components/header.pug
-        include components/slider.pug
-        include components/stock.pug
+        include modules/header.pug
+        include modules/slider.pug
+        include modules/stock.pug
+        include modules/new-items.pug
+        include modules/earlier.pug
 
         script(src="scripts/swiper.js")
         script(src="scripts/app.js")
@@ -22,4 +24,4 @@ html(lang="ru")
 
 
         //pug -w pug/*.pug -o ./ -P
-        //у хидера сделать меню на всю ширину а не ограничивать иначе тень работает не правильно
+        //у хидера иконки 3 штуки слишком дальеко расположены

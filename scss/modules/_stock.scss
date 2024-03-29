@@ -1,7 +1,5 @@
-/*-----------акции------------------*/
-
+/*-----------акции, новинки, покупали раньше------------------*/
 .product-list {
-
     &__wrapper {
         height: 443px;
     }
@@ -18,7 +16,6 @@
         font-size: 36px;
         font-weight: 700;
         line-height: 1.5;
-
     }
 
     &__all {
@@ -39,10 +36,17 @@
             right: 15px;
         }
     }
+    &__box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 40px;
+    }
 }
 
+/*--акции, новинки, покупали раньше*/
 .product-list_stock {
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .product {

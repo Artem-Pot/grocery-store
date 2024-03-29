@@ -406,7 +406,7 @@ body {
   }
 }
 
-/*-----------акции------------------*/
+/*-----------акции, новинки, покупали раньше------------------*/
 .product-list__wrapper {
   height: 443px;
 }
@@ -449,9 +449,16 @@ body {
   position: absolute;
   right: 15px;
 }
+.product-list__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
 
+/*--акции, новинки, покупали раньше*/
 .product-list_stock {
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .product {
