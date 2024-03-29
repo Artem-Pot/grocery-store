@@ -1,0 +1,47 @@
+.special-offers {
+    margin-top: 80px;
+
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: space-between;
+    }
+
+    &__box {
+        margin-top: 40px;
+        height: 200px;
+        max-width: 584px;
+        width: 100%;
+        border-radius: 4px;
+        padding: 40px;
+    }
+
+    &__box_card {
+        background: url('../images/special-offers/card.png') no-repeat right 30px center;
+        background-color: #FCD5BA;
+    }
+
+    &__box_basket {
+        background: url('../images/special-offers/basket.png') no-repeat center center;
+        background-color: #E5FFDE;
+    }
+
+    &__h3 {
+        max-width: 50%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__text {
+        max-width: 50%;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}

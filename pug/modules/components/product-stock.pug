@@ -1,6 +1,7 @@
 .product
     .product__box-images
-        img.product__images(src='./images/product/product-1.png' alt='Изображение продукта')
+        a.product__link(href='#')
+            img.product__images(src='./images/product/product-1.png' alt='Изображение продукта')
         button.product__button-favorites(type='button')
         span.product__sales -50%
     .product__box-price
@@ -10,7 +11,8 @@
         .product__price
             span.product__price-nocart 50,50 ₽
             span.product__title Обычная
-    p.product__name Г/Ц Блинчики с мясом вес, Россия
+    p.product__name
+        a.product__link(href='#') Г/Ц Блинчики с мясом вес, Россия
     .product__box-rating
         button.product__star.product__star_on(type='button')
         button.product__star.product__star_on(type='button')
