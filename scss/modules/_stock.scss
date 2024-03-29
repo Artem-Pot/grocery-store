@@ -1,7 +1,14 @@
 /*-----------акции, новинки, покупали раньше------------------*/
 .product-list {
+
+
     &__wrapper {
         height: 443px;
+
+        @media (max-width: 1210px) {
+            overflow: hidden;
+        }
+        
     }
 
     &__header {
@@ -39,11 +46,17 @@
     &__box {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
+        justify-items: center;
         gap: 40px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1210px) {
             grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 886px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
         }
     }
 }

@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
     width: 272px;
+    min-height: 349px;
     box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
     border-radius: 14px;
     overflow: hidden;
     background-color: #fff;
+    gap: 8px;
 
     &__box-images {
         position: relative;
@@ -49,7 +50,7 @@
         justify-content: space-between;
         max-height: 45px;
         width: 100%;
-        padding: 8px;
+        padding: 0 8px;
     }
 
     &__price {
@@ -57,7 +58,6 @@
         flex-direction: column;
         align-items: stretch;
         justify-content: center;
-        gap: 8px;
     }
 
     &__price-cart {
@@ -75,7 +75,7 @@
 
     &__name {
         font-size: 16px;
-        padding: 8px;
+        padding: 0 8px;
     }
 
     &__link {
@@ -88,7 +88,7 @@
         display: flex;
         align-self: start;
         gap: 4px;
-        padding-left: 8px;
+        padding-left: 8px 0;
     }
 
     &__star {
@@ -112,7 +112,6 @@
         color: #70C05B;
         border-radius: 4px;
         border: 1px solid #70C05B;
-        margin-bottom: 8px;
 
         &:hover {
             background-color: #FF6633;
