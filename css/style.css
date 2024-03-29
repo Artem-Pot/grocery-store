@@ -453,7 +453,13 @@ body {
 .product-list__box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   gap: 40px;
+}
+@media (max-width: 768px) {
+  .product-list__box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /*--акции, новинки, покупали раньше*/
@@ -475,7 +481,6 @@ body {
           align-items: center;
   gap: 8px;
   width: 272px;
-  height: 349px;
   -webkit-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
   border-radius: 14px;
@@ -517,7 +522,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 45px;
+  max-height: 45px;
   width: 100%;
   padding: 8px;
 }
@@ -576,12 +581,14 @@ body {
   background: url("../images/product/star-on.svg");
 }
 .product__button-buy {
-  width: 256px;
+  max-width: 256px;
+  width: 100%;
   height: 40px;
   font-size: 16px;
   color: #70C05B;
   border-radius: 4px;
   border: 1px solid #70C05B;
+  margin-bottom: 8px;
 }
 .product__button-buy:hover {
   background-color: #FF6633;
