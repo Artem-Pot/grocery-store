@@ -12,36 +12,106 @@
         align-items: center;
         gap: 40px;
         justify-content: space-between;
+
+        @media (max-width: 760px) {
+            flex-direction: column;
+            gap: 16px;
+        }
     }
 
     &__box {
         margin-top: 40px;
         height: 200px;
-        max-width: 584px;
         width: 100%;
         border-radius: 4px;
         padding: 40px;
+
+        @media (max-width: 760px) {
+            flex-direction: column;
+            margin-top: 0;
+        }
     }
 
     &__box_card {
         background: url('../images/special-offers/card.png') no-repeat right 30px center;
         background-color: #FCD5BA;
+
+        @media (max-width: 1150px) {
+            background-size: auto 120px;
+            background-position: auto center;
+        }
+
+        @media (max-width: 900px) {
+            background-size: auto 120px;
+            background-position: right -40px center;
+        }
+
+        @media (max-width: 760px) {
+            background-size: auto 120px;
+            background-position: right 10px center;
+        }
+
+        @media (max-width: 560px) {
+            background-size: auto 120px;
+            background-position: right -50px center;
+        }
     }
 
     &__box_basket {
         background: url('../images/special-offers/basket.png') no-repeat center center;
         background-color: #E5FFDE;
+
+        @media (max-width: 1150px) {
+            background-size: auto 120px;
+            background-position: right 0 center;
+        }
+
+        @media (max-width: 900px) {
+            background-size: auto 120px;
+            background-position: right -40px center;
+        }
+
+        @media (max-width: 760px) {
+            background-size: auto 120px;
+            background-position: right 10px center;
+        }
+
+        @media (max-width: 560px) {
+            background-size: auto 120px;
+            background-position: right -50px center;
+        }
     }
 
     &__h3 {
         max-width: 50%;
         font-size: 24px;
         font-weight: 700;
+
+        @media (max-width: 1150px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 900px) {
+            max-width: 80%;
+        }
+        
+        @media (max-width: 760px) {
+            max-width: 70%;
+        }
     }
 
     &__text {
         max-width: 50%;
         font-size: 16px;
         font-weight: 400;
+        padding-top: 8px;
+
+        @media (max-width: 900px) {
+            max-width: 80%;
+        }
+        
+        @media (max-width: 760px) {
+            max-width: 70%;
+        }
     }
 }
