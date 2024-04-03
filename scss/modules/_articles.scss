@@ -1,0 +1,16 @@
+.articles {
+    margin-top: 120px;
+
+    &__wrapper {
+
+    }
+
+    &__box-articles {
+        display: flex;
+        gap: 40px;
+    }
+}
+
+
+
+@import 'components/article';

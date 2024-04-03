@@ -23,8 +23,10 @@ body {
 
 }
 
+@import 'modules/components/title';
 @import 'modules/header';
 @import 'modules/slider';
 @import 'modules/stock';
-@import 'modules/new-items';
 @import 'modules/special-offers';
+@import 'modules/our-stores';
+@import 'modules/articles';

@@ -1,0 +1,37 @@
+.our-stores {
+    margin-top: 120px;
+    
+    &__box-button {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    
+    &__button {
+        width: 97px;
+        height: 32px;
+        padding: 8px;
+        background-color: #F3F2F1;
+        border-radius: 4px;
+        font-size: 12px;
+        color: #606060;
+    }
+
+    &__button_activ{
+        background-color: #70C05B;
+        color: #fff;
+    }
+
+    &__map {
+        margin-top: 24px;
+    }
+    
+    &__map_2,  &__map_3,  &__map_4 {
+        display: none;
+    }
+    
+}
+
+
+
