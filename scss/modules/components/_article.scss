@@ -1,0 +1,49 @@
+.articl {
+    background-color: #fff;
+    width: 100%;
+    flex: 1 1 420px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+
+    &:hover {
+        box-shadow: 4px 8px 16px 0px rgba(255, 102, 51, 0.2);
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 4px 4px 0 0;
+    }
+
+    &__box {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__date {
+        font-size: 12px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+}
+
+.button__articl {
+    background-color: #E5FFDE;
+    color: #70C05B;
+    width: 134px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+
+    &:hover {
+        background-color: #70C05B;  
+        color: #fff;
+    }
+}
