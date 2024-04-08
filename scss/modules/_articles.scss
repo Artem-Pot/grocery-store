@@ -5,6 +5,16 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 40px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+            grid-auto-columns: auto;
+        }
+
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+            grid-auto-columns: auto;
+        }
     }
 }
 
